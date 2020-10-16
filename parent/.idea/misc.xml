@@ -6,6 +6,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/ces-auth/pom.xml" />
         <option value="$PROJECT_DIR$/ces-biz/pom.xml" />
+        <option value="$PROJECT_DIR$/ces-gateway/pom.xml" />
       </list>
     </option>
   </component>

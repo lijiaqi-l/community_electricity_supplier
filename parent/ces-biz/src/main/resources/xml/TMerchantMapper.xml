@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sqds.ces.biz.mapper.TMerchantMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.sqds.ces.biz.entity.TMerchant">
+        <id column="id" property="id" />
+        <result column="merchant_name" property="merchantName" />
+        <result column="pid" property="pid" />
+        <result column="cid" property="cid" />
+        <result column="did" property="did" />
+        <result column="address" property="address" />
+        <result column="merchant_type_id" property="merchantTypeId" />
+        <result column="merchant_status_id" property="merchantStatusId" />
+        <result column="accessory_id" property="accessoryId" />
+        <result column="account_id" property="accountId" />
+        <result column="merchant_img" property="merchantImg" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, merchant_name, pid, cid, did, address, merchant_type_id, merchant_status_id, accessory_id, account_id, merchant_img
+    </sql>
+
+</mapper>

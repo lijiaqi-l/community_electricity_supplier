@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sqds.ces.biz.mapper.TUserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.sqds.ces.biz.entity.TUser">
+        <id column="id" property="id" />
+        <result column="telephone" property="telephone" />
+        <result column="name" property="name" />
+        <result column="username" property="username" />
+        <result column="password" property="password" />
+        <result column="plot_id" property="plotId" />
+        <result column="create_time" property="createTime" />
+        <result column="end_login_time" property="endLoginTime" />
+        <result column="user_status_id" property="userStatusId" />
+        <result column="role" property="role" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, telephone, name, username, password, plot_id, create_time, end_login_time, user_status_id, role
+    </sql>
+
+</mapper>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sqds.ces.biz.mapper.TShoppingAddressMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.sqds.ces.biz.entity.TShoppingAddress">
+        <id column="id" property="id" />
+        <result column="pid" property="pid" />
+        <result column="cid" property="cid" />
+        <result column="did" property="did" />
+        <result column="ploy_id" property="ployId" />
+        <result column="user_id" property="userId" />
+        <result column="accurate_address" property="accurateAddress" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, pid, cid, did, ploy_id, user_id, accurate_address
+    </sql>
+
+</mapper>

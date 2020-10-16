@@ -1,0 +1,45 @@
+spring:
+  cloud:
+    gateway:
+      locator:
+        enabled: true
+      routes:
+        - id: ces-auth
+          uri: lb://ces-auth
+          predicates:
+            - Path=/auth/**
+          filters:
+             - StripPrefix=1
+             - ValidateCodeGatewayFilter
+             - name: RequestRateLimiter
+               args:
+                 redis-rate-limiter.replenishRate: 1 #每秒中的产生令牌桶的数量
+                 redis-rate-limiter.burstCapacity: 3 #令牌桶的容积
+                 key-resolver: "#{@remoteAddrKeyResolver}"
+        - id: ces-upms
+          uri: lb://ces-upms
+          predicates:
+            - Path=/upms/**
+          filters:
+          - name: RequestRateLimiter
+            args:
+              redis-rate-limiter.replenishRate: 2
+              redis-rate-limiter.burstCapacity: 10
+              key-resolver: "#{@remoteAddrKeyResolver}"
+        - id: ces-biz
+          uri: lb://ces-biz
+          predicates:
+            - Path=/biz/**
+          filters:
+          - name: RequestRateLimiter
+            args:
+              redis-rate-limiter.replenishRate: 2
+              redis-rate-limiter.burstCapacity: 10
+              key-resolver: "#{@remoteAddrKeyResolver}"
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  application:
+    name: jxc-gateway
+server:
+  port: 9999

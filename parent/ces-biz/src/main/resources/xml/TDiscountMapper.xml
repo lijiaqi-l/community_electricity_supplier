@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sqds.ces.biz.mapper.TDiscountMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.sqds.ces.biz.entity.TDiscount">
+        <id column="id" property="id" />
+        <result column="discount_name" property="discountName" />
+        <result column="usable_time" property="usableTime" />
+        <result column="begin_time" property="beginTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, discount_name, usable_time, begin_time
+    </sql>
+
+</mapper>

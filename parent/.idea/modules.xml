@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/ces-auth/ces-auth.iml" filepath="$PROJECT_DIR$/ces-auth/ces-auth.iml" />
       <module fileurl="file://$PROJECT_DIR$/ces-biz/ces-biz.iml" filepath="$PROJECT_DIR$/ces-biz/ces-biz.iml" />
       <module fileurl="file://$PROJECT_DIR$/ces-common/ces-common.iml" filepath="$PROJECT_DIR$/ces-common/ces-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ces-gateway/ces-gateway.iml" filepath="$PROJECT_DIR$/ces-gateway/ces-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/parent.iml" filepath="$PROJECT_DIR$/parent.iml" />
     </modules>
   </component>

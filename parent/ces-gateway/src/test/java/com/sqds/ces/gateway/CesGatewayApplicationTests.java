@@ -1,10 +1,10 @@
-package com.sqds.cesbiz;
+package com.sqds.ces.gateway;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CesBizApplicationTests {
+class CesGatewayApplicationTests {
 
     @Test
     void contextLoads() {

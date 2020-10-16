@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sqds.ces.biz.mapper.TBankCardMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.sqds.ces.biz.entity.TBankCard">
+        <id column="id" property="id" />
+        <result column="bank_card_number" property="bankCardNumber" />
+        <result column="bank_name" property="bankName" />
+        <result column="bank_card_status" property="bankCardStatus" />
+        <result column="user_id" property="userId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, bank_card_number, bank_name, bank_card_status, user_id
+    </sql>
+
+</mapper>

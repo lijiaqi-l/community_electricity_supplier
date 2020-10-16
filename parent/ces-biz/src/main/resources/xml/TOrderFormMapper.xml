@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sqds.ces.biz.mapper.TOrderFormMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.sqds.ces.biz.entity.TOrderForm">
+        <id column="id" property="id" />
+        <result column="order_number" property="orderNumber" />
+        <result column="user_id" property="userId" />
+        <result column="merchant_id" property="merchantId" />
+        <result column="order_form_status_id" property="orderFormStatusId" />
+        <result column="activity_id" property="activityId" />
+        <result column="discount_coupon_id" property="discountCouponId" />
+        <result column="price_sum" property="priceSum" />
+        <result column="discount_before" property="discountBefore" />
+        <result column="discount_after" property="discountAfter" />
+        <result column="shopping_id" property="shoppingId" />
+        <result column="create_time" property="createTime" />
+        <result column="end_time" property="endTime" />
+        <result column="payment_id" property="paymentId" />
+        <result column="serial_number" property="serialNumber" />
+        <result column="deal_time" property="dealTime" />
+        <result column="remark" property="remark" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, order_number, user_id, merchant_id, order_form_status_id, activity_id, discount_coupon_id, price_sum, discount_before, discount_after, shopping_id, create_time, end_time, payment_id, serial_number, deal_time, remark
+    </sql>
+
+</mapper>
