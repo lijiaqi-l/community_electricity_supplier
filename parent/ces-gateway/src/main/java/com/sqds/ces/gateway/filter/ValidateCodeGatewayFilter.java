@@ -4,7 +4,7 @@ import cn.hutool.core.util.StrUtil;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.qpx.jxc.common.vo.ResultEntity;
-import com.qpx.jxcgateway.config.CommonConstants;
+import com.sqds.ces.gateway.config.CommonConstants;
 import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;

@@ -17,6 +17,7 @@
       <module name="ces-biz" target="1.8" />
       <module name="ces-common" target="1.8" />
       <module name="ces-gateway" target="1.8" />
+      <module name="ces-upms" target="1.8" />
       <module name="parent" target="1.5" />
     </bytecodeTargetLevel>
   </component>
@@ -25,6 +26,7 @@
       <module name="ces-auth" options="-parameters" />
       <module name="ces-biz" options="-parameters" />
       <module name="ces-gateway" options="-parameters" />
+      <module name="ces-upms" options="-parameters" />
     </option>
   </component>
 </project>

@@ -1,6 +1,6 @@
 package com.sqds.ces.gateway.config.router;
 
-import com.qpx.jxcgateway.web.ImageCodeHandler;
+import com.sqds.ces.gateway.web.ImageCodeHandler;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
